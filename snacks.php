@@ -45,7 +45,7 @@ Olimpia Milano - Cantù | 55-60 -->
 
   $isNumber = is_numeric($age);
 
-  if ($lengthName > 3 && $validMail && $validMail2 && $isNumber) {
+  if ($lengthName > 3 && $validMail !== false && $validMail2 !== false && $isNumber) {
 
     echo "Accesso riuscito";
 
@@ -54,7 +54,8 @@ Olimpia Milano - Cantù | 55-60 -->
     echo "Accesso negato";
 
   }
-
+  echo "<br>";
+  echo $validMail;
 ?>
 
 <h1>Snack 3</h1>
